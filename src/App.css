@@ -155,6 +155,7 @@ table {
 
 tr {
   display: flex;
+  flex-direction: row;
   align-items: baseline;
 }
 
@@ -180,4 +181,16 @@ td {
 }
 .accommodations {
   flex-basis: 200px;
+}
+
+@media (max-width: 580px) {
+  tr {
+    flex-direction: column;
+  }
+  .testType,
+  .testCenter,
+  .startsAt,
+  .accommodations {
+    flex-basis: 0;
+  }
 }
