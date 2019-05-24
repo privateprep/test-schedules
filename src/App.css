@@ -1,33 +1,91 @@
-.App {
-  text-align: center;
+.Location {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 6rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.Location__header {
+  margin-bottom: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Menu {
+  background: #fff;
+  position: fixed;
+  z-index: 99;
+  height: 5rem;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 3rem;
+  margin: 0 auto;
+  max-width: 200rem;
 }
 
-.App-link {
-  color: #61dafb;
+.filters {
+  margin-bottom: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.radio-group {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  max-height: 400px;
+}
+
+.radio {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  flex: 1;
+}
+
+.test-container__header {
+  display: flex;
+  align-items: center;
+}
+
+.test-container__header .label {
+  margin-left: 0.5rem;
+  padding: 2px 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #274548;
+  min-width: 1.5rem;
+  text-align: center;
+  border-radius: 20px;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+tr {
+  display: flex;
+  align-items: baseline;
+}
+
+th,
+td {
+  flex: 1;
+  padding: 8px;
+}
+
+.testType {
+  flex-basis: 100px;
+}
+.testCenter {
+  flex-basis: 150px;
+}
+.startsAt {
+  flex-basis: 260px;
+}
+.accommodations {
+  flex-basis: 200px;
 }
