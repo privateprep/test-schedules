@@ -6,6 +6,12 @@
   padding-top: 6rem;
 }
 
+@media (max-width: 660px) {
+  .App-body {
+    padding: 6rem 10px;
+  }
+}
+
 .Location__header {
   margin-bottom: 0.5rem;
 }
@@ -67,14 +73,12 @@
   padding: 0;
 }
 
-@media (min-width: 800px) {
-  .locations__list__item,
-  .location-link {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-  }
+.locations__list__item,
+.location-link {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
 }
 
 .locations__list__item h3 {

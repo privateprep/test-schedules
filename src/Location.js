@@ -34,11 +34,19 @@ const Location = ({
         .then(({ test_types, practice_tests }) => {
           setTestTypes(test_types);
           setPracticeTests(
-            practice_tests.sort((a, b) => {
-              a = new Date(a.startsAt);
-              b = new Date(b.startsAt);
-              return a > b ? -1 : a < b ? 1 : 0;
-            })
+            practice_tests
+              .sort((a, b) => {
+                a = new Date(a.startsAt);
+                b = new Date(b.startsAt);
+                return a > b ? -1 : a < b ? 1 : 0;
+              })
+              .map(test => ({
+                ...test,
+                accommodations: test.accommodations.map(accomm => ({
+                  ...accomm,
+                  name: accomm.name.replace("SAT Subject Test - ", ""),
+                })),
+              }))
           );
         })
         .finally(() => setIsLoading(false));
