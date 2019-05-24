@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f8c2781b.chunk.css",
+    "main.js": "/static/js/main.355e0aa8.chunk.js",
+    "main.js.map": "/static/js/main.355e0aa8.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.4a79294a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.4a79294a.js.map",
+    "static/js/2.392540ad.chunk.js": "/static/js/2.392540ad.chunk.js",
+    "static/js/2.392540ad.chunk.js.map": "/static/js/2.392540ad.chunk.js.map",
+    "static/js/3.93d2e318.chunk.js": "/static/js/3.93d2e318.chunk.js",
+    "static/js/3.93d2e318.chunk.js.map": "/static/js/3.93d2e318.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5124ec022601a25878ab7f928c14deef.js": "/precache-manifest.5124ec022601a25878ab7f928c14deef.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f8c2781b.chunk.css.map": "/static/css/main.f8c2781b.chunk.css.map",
+    "static/media/logo.5aab7908.svg": "/static/media/logo.5aab7908.svg",
+    "static/media/pin.c28fa333.svg": "/static/media/pin.c28fa333.svg"
+  }
+}
