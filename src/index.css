@@ -1,3 +1,63 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://privateprep.com/wp-content/themes/private_prep/fonts/proxima-nova-reg.woff2")
+      format("woff2"),
+    url("https://privateprep.com/wp-content/themes/private_prep/fonts/proxima-nova-reg.woff")
+      format("woff"),
+    url("https://privateprep.com/wp-content/themes/private_prep/fonts/proxima-nova-reg.otf")
+      format("opentype");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://privateprep.com/wp-content/themes/private_prep/fonts/proxima-nova-reg.woff2")
+      format("woff2"),
+    url("https://privateprep.com/wp-content/themes/private_prep/fonts/proxima-nova-reg.woff")
+      format("woff"),
+    url("https://privateprep.com/wp-content/themes/private_prep/fonts/proxima-nova-reg.otf")
+      format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://privateprep.com/wp-content/themes/private_prep/fonts/proxima-nova-bold.woff2")
+      format("woff2"),
+    url("https://privateprep.com/wp-content/themes/private_prep/fonts/proxima-nova-bold.woff")
+      format("woff"),
+    url("https://privateprep.com/wp-content/themes/private_prep/fonts/proxima-nova-bold.otf")
+      format("opentype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("https://privateprep.com/wp-content/themes/private_prep/fonts/futura-book.woff2")
+      format("woff2"),
+    url("https://privateprep.com/wp-content/themes/private_prep/fonts/futura-book.woff")
+      format("woff"),
+    url("https://privateprep.com/wp-content/themes/private_prep/fonts/futura-book.ttf")
+      format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("https://privateprep.com/wp-content/themes/private_prep/fonts/futura-bold.woff2")
+      format("woff2"),
+    url("https://privateprep.com/wp-content/themes/private_prep/fonts/futura-bold.woff")
+      format("woff"),
+    url("https://privateprep.com/wp-content/themes/private_prep/fonts/futura-bold.ttf")
+      format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
 *,
 *:before,
 *:after {
@@ -6,8 +66,8 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: "Futura", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,6 +95,20 @@ p {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Proxima Nova";
+}
+
+h5,
+h6,
+p,
+table {
+  font-family: "Futura";
+}
+
 label {
   cursor: pointer;
 }
@@ -47,4 +121,9 @@ body {
 ::selection {
   background: #f6c924;
   color: #292c2f;
+}
+
+a,
+a:hover {
+  text-decoration: none;
 }

@@ -1,4 +1,4 @@
-.Location {
+.App-body {
   position: relative;
   width: 100%;
   max-width: 1080px;
@@ -25,6 +25,71 @@
   max-width: 200rem;
 }
 
+.Menu .title {
+  margin-left: 1.5rem;
+  font-weight: 600;
+}
+
+.Home h1 {
+  margin-bottom: 0.5rem;
+}
+
+.locations__list {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 0.1rem solid #c4cdd5;
+}
+
+.locations__list__item {
+  border-bottom: 0.1rem solid #c4cdd5;
+}
+
+.location-link {
+  flex-flow: column;
+  padding: 1.5rem 1rem;
+  color: #404040;
+}
+
+.location-link:hover {
+  color: #292c2f;
+}
+
+.location-link:focus {
+  color: #9de2dd;
+}
+
+.locations__list li {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 800px) {
+  .locations__list__item,
+  .location-link {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.locations__list__item h3 {
+  text-transform: uppercase;
+  font-family: Futura, Futura Std, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.275rem;
+  font-size: 0.9rem;
+}
+
+.location-link .pin {
+  height: 18px;
+  margin-right: 0.5rem;
+}
+
 .filters {
   margin-bottom: 0.5rem;
 }
@@ -41,6 +106,24 @@
   cursor: pointer;
   padding: 0.25rem 0.5rem;
   flex: 1;
+}
+
+.radio .radio-label {
+  display: flex;
+  align-items: center;
+}
+
+.radio .radio-label .option-label {
+  padding-left: 4px;
+}
+
+.filters {
+  margin-bottom: 1rem;
+}
+
+.test-container {
+  border-top: 0.5rem solid #fff;
+  padding-top: 1rem;
 }
 
 .test-container__header {
@@ -69,6 +152,11 @@ table {
 tr {
   display: flex;
   align-items: baseline;
+}
+
+tbody tr {
+  border-top: 0.25rem solid #fff;
+  padding: 1rem 0;
 }
 
 th,
