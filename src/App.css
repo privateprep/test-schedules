@@ -106,6 +106,12 @@
   max-height: 400px;
 }
 
+@media (max-width: 560px) {
+  .radio-group {
+    max-height: inherit;
+  }
+}
+
 .radio {
   cursor: pointer;
   padding: 0.25rem 0.5rem;
