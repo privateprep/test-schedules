@@ -24,6 +24,10 @@ const Location = ({
   const location = findLocationBySlug(slug);
 
   useEffect(() => {
+    document.title = `${location.name} Test Schedule - Private Prep`;
+  }, [location.name]);
+
+  useEffect(() => {
     if (!!location) {
       setIsLoading(true);
       fetchLocationTests(location)
