@@ -1,13 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { Menu } from "./App";
 import { findLocationBySlug, fetchLocationTests } from "./lib";
+import AirBallonFloating from "./AirBallonFloating";
+
+const NoContent = _ => (
+  <div style={{ textAlign: "center", maxWidth: 660, margin: "auto" }}>
+    <AirBallonFloating />
+    <h3>Hmmm...</h3>
+    <p>We can't seem to find an upcoming test for this location.</p>
+    <p> Please reach out to our team for more details!</p>
+  </div>
+);
 
 const Location = ({
   match: {
     params: { slug },
   },
 }) => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [testTypes, setTestTypes] = useState([]);
   const [practiceTests, setPracticeTests] = useState([]);
   const [activeTestType, setActiveTestType] = useState(null);
@@ -125,6 +134,7 @@ const Location = ({
             </table>
           </div>
         )}
+        {!isLoading && !testTypes.length && <NoContent />}
       </div>
     </React.Fragment>
   );

@@ -20,7 +20,7 @@ export const locations = [
   { id: 9, name: "South Florida", slug: "south-florida", abbreviation: "fl" },
   {
     id: 10,
-    name: "New Jersey Metro West",
+    name: "Central New Jersey",
     slug: "central-new-jersey",
     abbreviation: "njw",
   },
