@@ -1,6 +1,12 @@
 # Test Schedules
 
-Simple [Create React App](https://github.com/facebook/create-react-app) that pulls in the test schedule for each of our website locations.
+Has moved to a new home with [https://tests.privateprep.com/schedule](https://tests.privateprep.com/schedule)
+
+Now baked into pp-tests repo
+
+## Old Info
+
+This was a simple [Create React App](https://github.com/facebook/create-react-app) that pulls in the test schedule for each of our website locations.
 
 See live at [https://test-schedules.privateprep.com](https://test-schedules.privateprep.com)
 
